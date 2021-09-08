@@ -17,10 +17,10 @@ exports.findListByRoleId = function (req, res) {
                 res.send({data:vals,"app_az":app_az})
             } else {
                 console.log(err);
-                res.sendStatus(502)
+                res.send({data:"502","app_az":app_az})
             }
         })
     } else {
-        res.sendStatus(403);
+        res.send({data:"403","app_az":app_az})
     }
 };
