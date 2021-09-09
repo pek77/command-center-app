@@ -9,21 +9,20 @@ var instantId = process.env.instantId || "instantId";
 
 
 exports.findListByRoleId = function (req, res) {
+    let obj = {"instantId":instantId,"AZ":app_az};
     if (req.body.id) {
         let id = req.body.id;
         let sql = "SELECT * from content_view where roleId=" + SqlString.escape(id);
-        let obj = {}
         query(sql, function (err, vals) {
             if (err == null) {
                 // console.log(vals);
-                obj["Web-Instant"] = {"instantId":instantId,"AZ":web_az};
-                res.send({data:vals,obj})
+                res.send({data:vals,"APP-Instant":obj})
             } else {
                 console.log(err);
-                res.send({data:"502",obj})
+                res.send({data:"502","APP-Instant":obj})
             }
         })
     } else {
-        res.send({data:"403",obj})
+        res.send({data:"403","APP-Instant":obj})
     }
 };
