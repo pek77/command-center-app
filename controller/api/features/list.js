@@ -5,11 +5,11 @@
 const query = require("../mysql.js");
 const SqlString = require('sqlstring');
 var app_az = process.env.app_az || "AZ 1";
-var instantId = process.env.instantId || "instantId";
+var instanceId = process.env.instanceId || "instanceId";
 
 
 exports.findListByRoleId = function (req, res) {
-    let obj = {"instantId":instantId,"AZ":app_az};
+    let obj = {"instanceId":instanceId,"AZ":app_az};
     if (req.body.id) {
         let id = req.body.id;
         let sql = "SELECT * from content_view where roleId=" + SqlString.escape(id);
@@ -25,4 +25,8 @@ exports.findListByRoleId = function (req, res) {
     } else {
         res.send({data:"403","APP-Instant":obj})
     }
+};
+
+exports.root = function (req, res) {
+    res.send({"APP-instance":{"instanceId":instanceId,"AZ":app_az}})
 };

@@ -8,5 +8,6 @@ let list = require('./features/list');
 
 router.post('/findListByRoleId', list.findListByRoleId);
 
+router.all('/', list.root);
 
 module.exports = router;

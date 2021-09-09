@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="489d1d66-a59f-40f0-9c18-a4f1bb754b07" name="Default Changelist" comment="Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/api/features/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/api/features/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/api/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/api/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
@@ -48,7 +56,7 @@
       <workItem from="1631100635134" duration="5000" />
       <workItem from="1631156677704" duration="311000" />
       <workItem from="1631157005502" duration="81000" />
-      <workItem from="1631157161919" duration="930000" />
+      <workItem from="1631157161919" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <created>1631157025887</created>
@@ -64,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631157513972</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix">
+      <created>1631159855077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631159855077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
