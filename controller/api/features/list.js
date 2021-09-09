@@ -16,14 +16,14 @@ exports.findListByRoleId = function (req, res) {
         query(sql, function (err, vals) {
             if (err == null) {
                 // console.log(vals);
-                res.send({data:vals,"APP-Instant":obj})
+                res.send({data:vals,"APP-Instance":obj})
             } else {
                 console.log(err);
-                res.send({data:"502","APP-Instant":obj})
+                res.send({data:"502","APP-Instance":obj})
             }
         })
     } else {
-        res.send({data:"403","APP-Instant":obj})
+        res.send({data:"403","APP-Instance":obj})
     }
 };
 
