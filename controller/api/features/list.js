@@ -5,7 +5,7 @@
 const query = require("../mysql.js");
 const SqlString = require('sqlstring');
 var app_az = process.env.app_az || "AZ 1";
-var instanceId = process.env.instanceId || "instanceId";
+var instanceId = process.env.instanceId || "ID";
 
 
 exports.findListByRoleId = function (req, res) {
@@ -28,5 +28,5 @@ exports.findListByRoleId = function (req, res) {
 };
 
 exports.root = function (req, res) {
-    res.send({"APP-instance":{"instanceId":instanceId,"AZ":app_az}})
+    res.render("index", {"data":{"instanceId":instanceId,"AZ":app_az}});
 };
